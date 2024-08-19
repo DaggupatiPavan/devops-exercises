@@ -1,0 +1,34 @@
+ANSIBLE
+----------
+1) ansible Roles and Playbooks Difference No
+2) what is ansible galaxy
+3) how to run multiple playbooks parallelly at a time ?
+4) Did you use Ansible Tower/AWX/AAP/ ? if yes, How to configure dynamic Inventory
+5) Difference between ansible fork vs serial(task run simultaneously in the given nodes)  vs   strategy
+
+SERIES: 
+Story 3: Suppose you have 4 nodes (nodeA, nodeB, nodeC, nodeD) in inventory, 2 tasks in playbook, forks =5 and serial = 2.
+
+First task process on 2 nodes (nodeA, nodeB) simultaneously (should process on 4 nodes, but due to serial configuration it process on 2 nodes only) and then jump into Second task. Second task process on 2 nodes (nodeA, nodeB) simultaneously. Once both tasks completed, it again run playbook for rest of 2 nodes.
+
+6) explain how ansible vault will work ? 
+7) What’s an ad-hoc command? No
+8) How to start playbook from a particular task ? ex: ansible-playbook playbook.yml --start-at-task="install packages"
+9) How to run only particular task in playbook ? ex: ansible-playbook example.yml --tags "configuration,packages"(need to use tags in playbook and call it)
+
+Kubernetes
+----------
+1) What are some of Kubernetes features?  Self-Healing, Load Balancing, Automated Rollout, Scaling, Secrets
+2) What Kubernetes objects are there? Pod, Deploy, deamonset, rc, rs, CM, Namespaces, service
+3) Kubernetes core components? etcd, controller, scheduler, api-server
+4) What are the components of a worker node ? kubelet, kube-proxy, container-runtime
+5) diff b/w statefulset and deployment 
+
+Jenkins
+----------
+1) Name some Jenkins plugins used in your project ?
+2) How to downgrade the Jenkins plugin ?
+3) what is the use of Jenkins Shared Libraries?
+4) How to configure any cloud as a worker agent in Jenkins?
+5) Declarative pipeline vs Scripted pipeline Difference? 
+
